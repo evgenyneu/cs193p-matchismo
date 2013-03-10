@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B312FC016EC539100604D9B /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B312FBF16EC539100604D9B /* Card.m */; };
+		2B312FC416EC543400604D9B /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B312FC316EC543400604D9B /* Deck.m */; };
 		2BA783AF16EC490A0029033E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA783AE16EC490A0029033E /* UIKit.framework */; };
 		2BA783B116EC490A0029033E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA783B016EC490A0029033E /* Foundation.framework */; };
 		2BA783B316EC490A0029033E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA783B216EC490A0029033E /* CoreGraphics.framework */; };
@@ -21,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B312FBE16EC539100604D9B /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		2B312FBF16EC539100604D9B /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		2B312FC216EC543400604D9B /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
+		2B312FC316EC543400604D9B /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
 		2BA783AB16EC490A0029033E /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA783AE16EC490A0029033E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2BA783B016EC490A0029033E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B312FC116EC53B000604D9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B312FC216EC543400604D9B /* Deck.h */,
+				2B312FC316EC543400604D9B /* Deck.m */,
+				2B312FBE16EC539100604D9B /* Card.h */,
+				2B312FBF16EC539100604D9B /* Card.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		2BA783A216EC490A0029033E = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +100,7 @@
 		2BA783B416EC490A0029033E /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				2BA783BD16EC490A0029033E /* CardGameAppDelegate.h */,
-				2BA783BE16EC490A0029033E /* CardGameAppDelegate.m */,
+				2B312FC116EC53B000604D9B /* Model */,
 				2BA783C616EC490A0029033E /* MainStoryboard.storyboard */,
 				2BA783C916EC490A0029033E /* CardGameViewController.h */,
 				2BA783CA16EC490A0029033E /* CardGameViewController.m */,
@@ -96,6 +112,8 @@
 		2BA783B516EC490A0029033E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2BA783BD16EC490A0029033E /* CardGameAppDelegate.h */,
+				2BA783BE16EC490A0029033E /* CardGameAppDelegate.m */,
 				2BA783B616EC490A0029033E /* Matchismo-Info.plist */,
 				2BA783B716EC490A0029033E /* InfoPlist.strings */,
 				2BA783BA16EC490A0029033E /* main.m */,
@@ -177,6 +195,8 @@
 				2BA783BB16EC490A0029033E /* main.m in Sources */,
 				2BA783BF16EC490A0029033E /* CardGameAppDelegate.m in Sources */,
 				2BA783CB16EC490A0029033E /* CardGameViewController.m in Sources */,
+				2B312FC016EC539100604D9B /* Card.m in Sources */,
+				2B312FC416EC543400604D9B /* Deck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +319,7 @@
 				2BA783D016EC490A0029033E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
